@@ -32,6 +32,9 @@ None
         name: jm1.rpi_cmdline
 ```
 
+For instructions on how to run Ansible playbooks have look at Ansible's
+[Getting Started Guide](https://docs.ansible.com/ansible/latest/network/getting_started/first_playbook.html).
+
 ## License
 
 GPL3

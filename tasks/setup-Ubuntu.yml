@@ -4,10 +4,6 @@
     cmdline: "{{ __cmdline }}"
   when: cmdline|default(None) == None
 
-- name: Cleanup role default variables
-  set_fact:
-    __cmdline: !!null
-
 - name: Setup kernel cmdline
   copy:
     content: '{{cmdline}}'

@@ -1,9 +1,4 @@
 ---
-- name: Set cmdline variable to default value
-  set_fact:
-    cmdline: "{{ __cmdline }}"
-  when: cmdline|default(None) == None
-
 - name: Setup kernel cmdline
   copy:
     content: '{{cmdline}}'
@@ -13,7 +8,3 @@
 - name: Reboot if kernel cmdline has been changed
   reboot:
   when: cmdline_result.changed == True
-
-- name: Cleanup role variables
-  set_fact:
-    cmdline: !!null

@@ -1,4 +1,4 @@
-# Ansible Role: jm1.rpi_cmdline
+# Ansible Role `jm1.rpi_cmdline`
 
 This role helps to setup the kernel cmdline on Raspberry Pi.
 
@@ -9,7 +9,7 @@ Available on Ansible Galaxy: [jm1.rpi_cmdline](https://galaxy.ansible.com/jm1/rp
 
 ## Requirements
 
-None
+TODO.
 
 ## Variables
 
@@ -19,7 +19,7 @@ None
 
 ## Dependencies
 
-None.
+TODO.
 
 ## Example Playbook
 
@@ -35,7 +35,9 @@ For instructions on how to run Ansible playbooks have look at Ansible's
 
 ## License
 
-GPL3
+GNU General Public License v3.0 or later
+
+See [LICENCE.md](LICENSE.md) to see the full text.
 
 ## Author
 

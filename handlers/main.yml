@@ -1,0 +1,3 @@
+---
+- name: Reboot if kernel cmdline has been changed
+  reboot:

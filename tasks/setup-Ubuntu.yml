@@ -1,6 +1,0 @@
----
-- name: Setup kernel cmdline
-  copy:
-    content: '{{ cmdline }}'
-    dest: /boot/firmware/cmdline.txt
-  notify: 'Reboot if kernel cmdline has been changed'

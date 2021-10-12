@@ -9,25 +9,26 @@ Available on Ansible Galaxy: [jm1.rpi_cmdline](https://galaxy.ansible.com/jm1/rp
 
 ## Requirements
 
-TODO.
+None.
 
 ## Variables
 
-| Name      | Default value         | Required | Description                                     |
-| --------- | --------------------- | -------- | ----------------------------------------------- |
-| `cmdline` | *depends on os image* | no       | Content written to `/boot/firmware/cmdline.txt` |
+| Name      | Default value                                                                                                                                  | Required | Description                                     |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ----------------------------------------------- |
+| `cmdline` | `net.ifnames=0 dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 root=LABEL=writable rootfstype=ext4 elevator=deadline rootwait fixrtc` | no       | Content written to `/boot/firmware/cmdline.txt` |
 
 ## Dependencies
 
-TODO.
+None.
 
 ## Example Playbook
 
-```
+```yml
 - hosts: all
-  tasks:
-    - import_role:
-        name: jm1.rpi_cmdline
+  roles:
+  - name: Setup the kernel cmdline on Raspberry Pi
+    role: jm1.rpi_cmdline
+    tags: ["jm1.rpi_cmdline"]
 ```
 
 For instructions on how to run Ansible playbooks have look at Ansible's
